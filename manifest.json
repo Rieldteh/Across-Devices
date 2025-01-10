@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Across-Devices",
+    "version": "1.0",
+    "description": "Plugin for synchronizing videos across devices",
+    "author": "Rieldteh & SneakyF0xy",
+    "permissions": ["storage", "tabs"],
+    "action": {
+      "default_popup": "popup.html",
+      "//default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    }
+  }
