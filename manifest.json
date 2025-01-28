@@ -4,7 +4,12 @@
     "version": "1.0",
     "description": "Plugin for synchronizing videos across devices",
     "author": "Rieldteh & SneakyF0xy",
-    "permissions": ["storage", "tabs"],
+    "//icons": {
+      "128": "assets/icon128.png"
+    },
+    "//background": {
+      "service_worker": "background.js"
+    },
     "action": {
       "default_popup": "popup.html",
       "//default_icon": {
@@ -12,5 +17,17 @@
         "48": "icon.png",
         "128": "icon.png"
       }
+    },
+    "permissions": [
+      "scripting"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "web_accessible_resources": [
+    {
+      "resources": ["test.html"],
+      "matches": ["<all_urls>"]
     }
-  }
+  ]
+}
